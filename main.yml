@@ -1,0 +1,10 @@
+---
+
+- name: "http"
+  become: true
+  tasks:
+    
+    - name: "Installing apache"
+      yum:
+        name: httpd
+        state: present
